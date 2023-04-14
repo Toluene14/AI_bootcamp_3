@@ -52,16 +52,6 @@ def create_footer():
 
 create_footer()
 
-
-# Main Application
-def main():
-	st.title("Tweet sentiment App")
-	menu = ["Home","About"]
-	choice = st.sidebar.selectbox("Menu",menu)
-	if choice == "Home":
-		st.subheader("text sentiment In Text")
-
-		with st.form(key='tweet_sentiment_form'):
 # Main Application
 def main():
 	st.title("tweets classification")
