@@ -88,8 +88,6 @@ def main():
 		st.subheader("About")
 		st.write("Welcome to our tweet sentiment dectection project! Our group has created a sophisticated machine learning model that can reliably recognise and categorize spam messages. With our spam classifier")
 		
-				# st.write(probability)
-				proba_df = pd.DataFrame(probability,columns=pipe_lr.classes_)
 				
 	else:
 		st.subheader("About")
