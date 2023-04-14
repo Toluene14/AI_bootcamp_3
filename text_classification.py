@@ -12,14 +12,6 @@ import joblib
 pipe_lr = joblib.load(open("Twitter_Sentiment_Analysis_Web_App (1) (2).pk1","rb"))
 
 # Fxn
-def predict(docx):
-
-
-# Utils
-import joblib 
-pipe_lr = joblib.load(open("Twitter_Sentiment_Analysis_Web_App.pkl",'rb'))
-
-# Fxn
 def predict_emotions(docx):
 	results = pipe_lr.predict([docx])
 	return results[0]
@@ -86,8 +78,6 @@ def main():
 			col1,col2  = st.columns(2)
 
 			# Apply Fxn Here
-			prediction = predict(raw_text)
-			probability = get_prediction_proba(raw_text)
 			
 			prediction = predict_emotions(raw_text)
 			probability = get_prediction_proba(raw_text)
